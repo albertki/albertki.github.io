@@ -6,59 +6,39 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter|Nanum+Pen+Script|Poiret+One|Raleway">
   <script src="javascripts/main.js"></script>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 
-<body>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
-  </nav> -->
-  <!--navigation bar-->
-  <div id='nav'>    
-    <img src="./media/img/bart.gif" alt="Bart" width="200"
-    height="200"/>
-    <a href="./index.html">Home</a>
-    <a href="./interests.html">Interests</a>
-    <a href="./random_stuff.html">Random Stuff</a>
-    <a class="login" href="./login.html">Log In</a>
-  </div>
-
-
-  <h1 class="byline">Welcome to Al's Site</h1>   <!--title text-->
+  </nav>
+  </header>
+  
+  <main role="main" class="inner cover">
     <figure>
       <a href="./random_stuff.html" target="_self">
         <!--GIF of Ralph waving-->
@@ -67,65 +47,15 @@
       </a>
     </figure>
 
-    <ul class="external-link">     <!--quick access nav to on-page sections-->
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="#random">Random Stuff</a></li>
-    </ul>
+  </main>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
 
-  <div class="content">
-
-
-  <div id='about'>
-    <h2>About Me</h2>
-      <p>My name is Al. I am a computer science major who doesn't particularly
-        excel in computer science.</p>
-      <p>My hobbies include listening to music and playing piano or guitar.</p>
-      <figure>
-        <img src="./media/img/hello.gif" alt="proboscis monkey" width=280
-        height=240/>
-        <figcaption>Al</figcaption>
-    </figure>
-  </div>
-
-
-  <div id='interests'>
-    <h2>Interests</h2>
-      <ul>
-        <li>Music</li>
-        <li>Movies</li>
-        <li>Rewatching TV shows</li>
-        <li>Cooking (or at least watching other people cook)</li>
-        <li>Blaming the world for all my personal problems</li>
-        <li>Click <a class="external-link" href="./interests.html">here</a> for more</li>
-      </ul>
-    <h3>What Al does <em>NOT</em> excel at</h3>
-      <ul>
-        <li>Brazilian Jiu-Jitsu
-        <li>Being nice to people he doesn't know</li>
-        <li>Not lying about being dishonest</li>
-        <li>Driving</li>
-      </ul>
-  </div>
-
-
-  <div id='random'>
-    <h2>Random Stuff</h2>
-      <p>Al likes random stuff that others may deem outdated, dull or weird.</p>
-      <a target="_blank" href="http://google.com">Link to Google</a>
-      <h3>Click <a class="external-link" href="./random_stuff.html">here</a> for more</h3>
-  </div>
-
-
-  </div>
-
-  <!--********* background music *********-->
-  <embed id='music' src="./media/aud/Stayin' Alive.mp3" width="180" height="100" loop="true" autostart="true" 
-    type="audio/mpeg" hidden="false"/>
-
+</div>
 
 </body>
-
-<br><br>
 
 </html>
