@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!--********* Home page of site *********-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Al's World</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter|Nanum+Pen+Script|Poiret+One|Raleway">
+  <script src="javascripts/main.js"></script>
 </head>
+
+
 <body>
-    <h1>Hello</h1>
+
+  <div id='nav'>    <!--navigation bar-->
+    <img src="./media/img/bart.gif" alt="Bart" width="200"
+    height="200"/>
+    <a href="./main.html">Home</a>
+    <a href="./interests.html">Interests</a>
+    <a href="./random_stuff.html">Random Stuff</a>
+    <a class="login" href="./login.html">Log In</a>
+  </div>
+
+
+  <h1 class="byline">Welcome to Al's Site</h1>   <!--title text-->
+    <figure>
+      <a href="./random_stuff.html" target="_self">
+        <!--GIF of Ralph waving-->
+        <img src="./media/img/hello.gif" alt="Waving hello" width="350"
+        height="280" />
+      </a>
+    </figure>
+
+    <ul class="external-link">     <!--quick access nav to on-page sections-->
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#random">Random Stuff</a></li>
+    </ul>
+
+  <div class="content">
+
+
+  <div id='about'>
+    <h2>About Me</h2>
+      <p>My name is Al. I am a computer science major who doesn't particularly
+        excel in computer science.</p>
+      <p>My hobbies include listening to music and playing piano or guitar.</p>
+      <figure>
+        <img src="./media/img/hello.gif" alt="proboscis monkey" width=280
+        height=240/>
+        <figcaption>Al</figcaption>
+    </figure>
+  </div>
+
+
+  <div id='interests'>
+    <h2>Interests</h2>
+      <ul>
+        <li>Music</li>
+        <li>Movies</li>
+        <li>Rewatching TV shows</li>
+        <li>Cooking (or at least watching other people cook)</li>
+        <li>Blaming the world for all my personal problems</li>
+        <li>Click <a class="external-link" href="./interests.html">here</a> for more</li>
+      </ul>
+    <h3>What Al does <em>NOT</em> excel at</h3>
+      <ul>
+        <li>Brazilian Jiu-Jitsu
+        <li>Being nice to people he doesn't know</li>
+        <li>Not lying about being dishonest</li>
+        <li>Driving</li>
+      </ul>
+  </div>
+
+
+  <div id='random'>
+    <h2>Random Stuff</h2>
+      <p>Al likes random stuff that others may deem outdated, dull or weird.</p>
+      <a target="_blank" href="http://google.com">Link to Google</a>
+      <h3>Click <a class="external-link" href="./random_stuff.html">here</a> for more</h3>
+  </div>
+
+
+  </div>
+
+  <!--********* background music *********-->
+  <embed id='music' src="./media/aud/Stayin' Alive.mp3" width="180" height="100" loop="true"
+    autostart="true" type="audio/mpeg" hidden="false"/>
+
+
 </body>
+
+<br><br>
+
 </html>
