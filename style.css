@@ -10,11 +10,16 @@ html, body {
 }
 
 .navbar {
-  /* background-color: red; */
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  /* padding-left: 3em; */
+}
+.navbar .navbar-collapse {
+  text-align: center;
 }
 .navbar .nav-link {
   /* padding: .25rem 0; */
-  /* color: whitesmoke; */
   border-bottom: .25rem solid transparent;
 }
 .navbar .active .nav-link {
@@ -54,8 +59,8 @@ h1 {
 }
 
 .fixed-top {
-  left: auto;
-  right: auto;
+  /* left: auto;
+  right: auto; */
   transition:background-color 200ms linear; 
 }
 
@@ -64,6 +69,10 @@ h1 {
   transition: background-color 200ms linear;
 }
 
-.fixed-top.scrolled .nav-link {
-  color:#555;
+.fixed-top.scrolled .nav-link,
+.fixed-top.scrolled .navbar-brand {
+  color: #555!important;
+}
+.fixed-top.scrolled .active .nav-link {
+  border-bottom-color: #555;
 }
