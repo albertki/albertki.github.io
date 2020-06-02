@@ -12,7 +12,11 @@ header {
   margin-bottom: 3em;
 }
 h1 {
-  color:whitesmoke;
+  color:dodgerblue;
+}
+
+.blah {
+  background-color: ghostwhite;
 }
 
 
@@ -72,7 +76,13 @@ h1 {
 }
 
 
-
 .jumbotron {
   background-color: transparent;
+}
+
+
+.featurette-divider {
+  margin: 1rem 7rem; /* Space out the Bootstrap <hr> more */
+  border: 1px solid gray;
+  /* border-radius: 2px; */
 }
