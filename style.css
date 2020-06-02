@@ -8,6 +8,13 @@ html, body {
   height: 100%;
   background-color: dodgerblue;
 }
+header {
+  margin-bottom: 3em;
+}
+h1 {
+  color:whitesmoke;
+}
+
 
 .navbar {
   margin-left: auto;
@@ -31,23 +38,28 @@ html, body {
 .navbar .nav-link:hover {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
+.fixed-top {
+  /* left: auto;
+  right: auto; */
+  transition:background-color 200ms linear; 
+}
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+.fixed-top.scrolled .active .nav-link {
+  border-bottom-color: #555;
+}
+.navbar.scrolled .nav-link:hover {
+  border-bottom-color: rgb(161, 161, 161);
+}
 
-header {
-  margin-bottom: 3em;
-}
-h1 {
-  color:whitesmoke;
-}
-
-.jumbotron {
-  background-color: transparent;
-}
 
 /* .show {
   background-color: yellow;
 } */
 .dropdown-menu {
-  background-color: transparent;
+  background-color: white;
   color: whitesmoke;
 }
 .dropdown:hover .dropdown-menu {
@@ -55,24 +67,12 @@ h1 {
 }
 
 .dropdown-item {
-  padding: 2px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.fixed-top {
-  /* left: auto;
-  right: auto; */
-  transition:background-color 200ms linear; 
-}
 
-.fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
 
-.fixed-top.scrolled .nav-link,
-.fixed-top.scrolled .navbar-brand {
-  color: #555!important;
-}
-.fixed-top.scrolled .active .nav-link {
-  border-bottom-color: #555;
+.jumbotron {
+  background-color: transparent;
 }
