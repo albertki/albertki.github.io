@@ -19,10 +19,6 @@ h1 {
   /* color:dodgerblue; */
 }
 
-.blah {
-  background-color: ghostwhite;
-}
-
 
 .navbar {
   margin-left: auto;
@@ -89,4 +85,27 @@ h1 {
   margin: 1rem 7rem; /* Space out the Bootstrap <hr> more */
   border: 1px solid gray;
   /* border-radius: 2px; */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
