@@ -4,15 +4,19 @@
 /* main {
   max-width: 42em;
 } */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
   background-color: dodgerblue;
 }
-header {
-  margin-bottom: 3em;
+main {
+  margin-top: 3em;
 }
 h1 {
-  color:dodgerblue;
+  /* color:dodgerblue; */
 }
 
 .blah {

@@ -22,52 +22,51 @@
 <body data-spy="scroll" data-target="#navbar1" data-offset="70">
   <!-- <div class="container-fluid p-3 align-items-center mx-auto d-flex flex-column"> -->
   <header>
-    <nav id="navbar1" class="navbar navbar-expand-md fixed-top navbar-dark shadow-sm" >
-        
-        <a class="navbar-brand" href="#">albert ki</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav mr-5">
-            <li>
-              <a class="nav-link" href="https://github.com/albertki/" target="_blank" rel="noopener noreferrer">Contact Me</a>
-            </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
+      <nav id="navbar1" class="navbar navbar-expand-md fixed-top navbar-dark shadow-sm" >
+          <a class="navbar-brand" href="#">albert ki</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-5">
+                <li>
+                  <a class="nav-link" href="https://github.com/albertki/" target="_blank" rel="noopener noreferrer">Contact Me</a>
+                </li>
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+          </div>
       </nav>
   </header>
 <!-- </div> -->
-<main>
+<main id="home">
   <!-- <h6 class="mb-5">blahhhh</h6> -->
 
     <div class="container-fluid cover-container p-3 mx-auto flex-column">
-        <div id="home" class="jumbotron bg-light">
+        <div class="jumbotron bg-light">
           <h1 class="display-6">albert ki</h1>
           <img src="https://i.ytimg.com/vi/6ttOeufkwJA/hqdefault.jpg" class="img-fluid" alt="selfie">
           <p class="lead">I'm a scientist. You a scientist. Science..together..</p>
@@ -78,9 +77,9 @@
     </div>
     <!-- <hr class="featurette-divider"> -->
     
-    <div class="container-fluid cover-container p-3 mx-auto flex-column">
-      <div id="projects" class="jumbotron bg-primary mt-3">
-        <h1 class="display-6">albert ki</h1>
+    <div id="projects" class="container-fluid cover-container p-3 mx-auto flex-column">
+      <div class="jumbotron bg-primary mt-3">
+        <h1 class="display-6">Projects</h1>
         <p class="lead">I'm a scientist. You a scientist. Science..together..</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -93,9 +92,9 @@
     </div>
     <!-- <hr class="featurette-divider"> -->
 
-    <div class="container-fluid cover-container p-3 mx-auto flex-column">
-        <div id="about" class="jumbotron bg-primary mt-3">
-          <h1 class="display-6">albert ki</h1>
+    <div id="about" class="container-fluid cover-container p-3 mx-auto flex-column">
+        <div class="jumbotron bg-light mt-3">
+          <h1 class="display-6">About</h1>
           <p class="lead">I'm a scientist. You a scientist. Science..together..</p>
           <hr class="my-4">
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
