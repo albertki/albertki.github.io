@@ -67,6 +67,10 @@ h1 {
   background-color: #a1a1a13a;
 }
 
+.navbar-toggler-icon:focus {
+  border-color: red;
+}
+
 /* .show {
   background-color: yellow;
 } */
