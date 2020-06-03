@@ -12,6 +12,11 @@ html, body {
   height: 100%;
   background-color: dodgerblue;
 }
+body {
+  position: relative;
+  overflow-y: auto;
+  padding-top: 65px; /* padding for fixed navbar */
+}
 main {
   margin-top: 3em;
 }
@@ -25,6 +30,7 @@ h1 {
   margin-right: auto;
   /* width: fit-content; */
   padding-left: 3em;
+  background-color: rgb(22, 103, 184);
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -57,7 +63,9 @@ h1 {
 .navbar.scrolled .nav-link:hover {
   border-bottom-color: rgb(161, 161, 161);
 }
-
+.navbar-nav .nav-link.active {
+  background-color: #a1a1a13a;
+}
 
 /* .show {
   background-color: yellow;
@@ -73,6 +81,11 @@ h1 {
 .dropdown-item {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+
+#projects {
+  background-color: darksalmon;
 }
 
 
@@ -109,3 +122,42 @@ h1 {
     margin-top: 7rem;
   }
 }
+
+
+#linkedin, #github {
+  font-size: 3em; 
+  /* float: left; */
+  margin-right: .5rem;
+}
+#linkedin {
+  color: #0e76a8;
+}
+#linkedin:hover {
+  color: #0b5c81;
+}
+#linkedin:active, #github:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#github {
+  color: rgb(73, 70, 70);
+}
+#github:hover {
+  color: black;
+}
+
+/* #contact a {
+  display: block;
+  line-height: 15px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  font-size: 15px;
+  width: fit-content;
+} */
+/* ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+} */
+
