@@ -19,14 +19,18 @@ body {
   overflow-y: auto;
   padding-top: 65px; /* padding for fixed navbar */
 }
-main {
-  margin-top: 3em;
-  
-}
 /* h1 {
   color:dodgerblue;
 } */
-
+.lead {
+  font-weight: 300;
+}
+#intro {
+  background-color: whitesmoke;
+  color: #0b5c81;
+  padding: 1em 1em;
+  border-radius: 10px;
+}
 
 .navbar {
   margin-left: auto;
@@ -102,7 +106,12 @@ main {
 
 
 #projects {
-  background-color: #0e76a8;
+  background-color: rgb(250, 249, 249);
+  /* width: 80%; */
+}
+
+#projects > .cover-container > h1 {
+  color: rgb(22, 106, 190);
 }
 
 
@@ -112,8 +121,8 @@ main {
 
 
 .featurette-divider {
-  margin: 1rem 7rem; /* Space out the Bootstrap <hr> more */
-  border: 1px solid gray;
+  margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
+  border: 1px solid rgb(219, 219, 219);
   /* border-radius: 2px; */
 }
 
@@ -178,3 +187,36 @@ main {
   padding: 0px;
 } */
 
+footer {
+  background-color: azure;
+  padding: 3em 0;
+}
+
+footer .footer-list {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0;
+}
+footer .footer-list a {
+  display: block;
+  text-align: center;
+  text-decoration: dashed;
+  color: black;
+  font-size: 1.5em;
+  padding-bottom: .5em;
+}
+
+/* @media (min-width: 992px) {
+  footer .footer-list a {
+      width: 25%;
+      padding: 0;
+      align-items: center;
+  }
+} */
+
+footer .row {
+  width: 50%;
+  padding-bottom: 2em;
+  text-align: center;
+}
