@@ -62,6 +62,17 @@ body {
 .navbar .nav-link:hover {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
+
+@media (max-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    width: fit-content;
+    text-align: center;
+  }
+  .navbar-expand-md .navbar-nav {
+    align-items: center;
+    margin-right: auto!important;
+  }
+}
 .fixed-top {
   /* left: auto;
   right: auto; */
@@ -148,7 +159,6 @@ body {
     margin-top: 7rem;
   }
 }
-
 
 #linkedin, #github {
   font-size: 3em; 
