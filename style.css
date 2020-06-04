@@ -3,9 +3,6 @@
 .cover-container {
   max-width: 42em;
 }
-/* main {
-  max-width: 42em;
-} */
 html {
   scroll-behavior: smooth;
 }
@@ -19,19 +16,18 @@ body {
   overflow-y: auto;
   padding-top: 65px; /* padding for fixed navbar */
 }
-/* h1 {
-  color:dodgerblue;
-} */
 .lead {
   font-weight: 300;
 }
 #intro {
-  background-color: whitesmoke;
+  background-color: aliceblue;
   color: #0b5c81;
   padding: 1em 1em;
   border-radius: 10px;
 }
 
+
+/* Header CSS */
 .navbar {
   margin-left: auto;
   margin-right: auto;
@@ -91,13 +87,9 @@ body {
 .navbar-nav .nav-link.active {
   background-color: #a1a1a13a;
 }
-
 .navbar-light .navbar-nav .nav-link {
   color: dodgerblue;
 }
-/* .navbar-toggler-icon:focus {
-  border-color: red;
-} */
 
 /* .show {
   background-color: yellow;
@@ -115,9 +107,12 @@ body {
   padding-right: 1em;
 }
 
+/* End Header CSS */
+
 
 #projects {
-  background-color: rgb(250, 249, 249);
+  /* background-color: rgb(250, 249, 249); */
+  background-color: aliceblue;
   /* width: 80%; */
 }
 
@@ -125,11 +120,9 @@ body {
   color: rgb(22, 106, 190);
 }
 
-
 .jumbotron {
   background-color: transparent;
 }
-
 
 .featurette-divider {
   margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
@@ -142,7 +135,6 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
 
 .marketing h2 {
   font-weight: 400;
@@ -160,7 +152,10 @@ body {
   }
 }
 
-#linkedin, #github {
+
+/* Contact CSS */
+
+#contact #linkedin, #contact #github {
   font-size: 3em; 
   /* float: left; */
   margin-right: .5rem;
@@ -197,6 +192,31 @@ body {
   padding: 0px;
 } */
 
+.msg {
+  text-align: center;
+}
+.msg a {
+  /* display: block; */
+  width: 75%;
+  border-radius: 5px;
+  color: rgb(7, 104, 104);
+  background-color: rgb(7, 173, 173);
+  border: 0px solid transparent;
+  line-height: 1.75em;
+}
+.msg a:hover {
+  color: rgb(7, 104, 104);
+  background-color: rgb(10, 150, 150);
+}
+/* .msg i {
+  position: absolute;
+  align-items: left;
+} */
+
+/* End Contact CSS */
+
+
+/* Footer CSS */
 footer {
   background-color: azure;
   padding: 3em 0;
@@ -213,7 +233,8 @@ footer .footer-list a {
   text-align: center;
   text-decoration: dashed;
   color: black;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
+  font-size: 2em;
   padding-bottom: .5em;
 }
 
@@ -230,3 +251,5 @@ footer .row {
   padding-bottom: 2em;
   text-align: center;
 }
+
+/* End Footer CSS */
