@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Comfortaa:wght@400;500;600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 .cover-container {
   max-width: 42em;
 }
@@ -13,7 +13,6 @@ html {
 html, body {
   height: 100%;
   background-color: dodgerblue;
-  /* font-family: 'Roboto', sans-serif; */
 }
 body {
   position: relative;
@@ -22,6 +21,7 @@ body {
 }
 main {
   margin-top: 3em;
+  
 }
 /* h1 {
   color:dodgerblue;
@@ -34,6 +34,13 @@ main {
   /* width: fit-content; */
   padding-left: 3em;
   background-color: rgb(22, 103, 184);
+}
+.navbar-brand {
+  /* font-family: 'Baloo Thambi 2', cursive; */
+  font-family: 'Comfortaa', cursive;
+  /* font-family: 'Righteous', cursive; */
+  font-weight: 500;
+  font-size: 1.5em;
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -73,9 +80,9 @@ main {
 .navbar-light .navbar-nav .nav-link {
   color: dodgerblue;
 }
-.navbar-toggler-icon:focus {
+/* .navbar-toggler-icon:focus {
   border-color: red;
-}
+} */
 
 /* .show {
   background-color: yellow;
@@ -95,7 +102,7 @@ main {
 
 
 #projects {
-  background-color: darksalmon;
+  background-color: #0e76a8;
 }
 
 
