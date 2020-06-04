@@ -20,9 +20,9 @@ body {
 main {
   margin-top: 3em;
 }
-h1 {
-  /* color:dodgerblue; */
-}
+/* h1 {
+  color:dodgerblue;
+} */
 
 
 .navbar {
@@ -67,6 +67,9 @@ h1 {
   background-color: #a1a1a13a;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: dodgerblue;
+}
 .navbar-toggler-icon:focus {
   border-color: red;
 }
