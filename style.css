@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 .cover-container {
   max-width: 42em;
 }
@@ -11,6 +13,7 @@ html {
 html, body {
   height: 100%;
   background-color: dodgerblue;
+  /* font-family: 'Roboto', sans-serif; */
 }
 body {
   position: relative;
@@ -54,7 +57,7 @@ main {
   transition:background-color 200ms linear; 
 }
 .fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.808) !important;
   transition: background-color 200ms linear;
 }
 .fixed-top.scrolled .active .nav-link {
