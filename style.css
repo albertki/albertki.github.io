@@ -11,7 +11,8 @@ html {
 
 html, body {
   height: 100%;
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
+  background-color: rgb(148, 216, 201);
 }
 body {
   position: relative;
@@ -25,11 +26,56 @@ body {
   background-color: aliceblue;
   color: #0b5c81;
   padding: 1em 1em;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+#profile-pic > img {
+  border-radius: 8px;
+}
+#projects {
+  /* background-color: rgb(250, 249, 249); */
+  background-color: aliceblue;
+  /* width: 80%; */
 }
 
+#projects > .cover-container > h1 {
+  /* color: rgb(22, 106, 190); */
+  color: #379480;
+}
 
-/* Header CSS */
+.jumbotron {
+  background-color: transparent;
+}
+
+.featurette-divider {
+  margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
+  border: 1px solid rgb(219, 219, 219);
+  /* border-radius: 2px; */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/************* BEGIN Header CSS /*************/
+
 .navbar {
   margin-left: auto;
   margin-right: auto;
@@ -129,57 +175,14 @@ body {
   border: 2px solid transparent;
 }
 
-/* End Header CSS */
+/************* END Header CSS /*************/
 
 
-#projects {
-  /* background-color: rgb(250, 249, 249); */
-  background-color: aliceblue;
-  /* width: 80%; */
-}
+/************* BEGIN Contact CSS /*************/
 
-#projects > .cover-container > h1 {
-  color: rgb(22, 106, 190);
-}
-
-.jumbotron {
-  background-color: transparent;
-}
-
-.featurette-divider {
-  margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
-  border: 1px solid rgb(219, 219, 219);
-  /* border-radius: 2px; */
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-.marketing h2 {
-  font-weight: 400;
-}
-
-@media (min-width: 40em) {
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-
-/* Contact CSS */
-
-#contact #linkedin, #contact #github {
-  font-size: 3em; 
+#contact #linkedin, #contact #github, #contact #facebook {
   /* float: left; */
+  font-size: 3em; 
   margin-right: .5rem;
 }
 #linkedin {
@@ -188,8 +191,7 @@ body {
 #linkedin:hover {
   color: #0b5c81;
 }
-#linkedin:active, #github:active {
-  /* background-color: #3e8e41; */
+#linkedin:active, #github:active, #facebook:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -198,6 +200,12 @@ body {
 }
 #github:hover {
   color: black;
+}
+#facebook {
+  color: #1778F2;
+}
+#facebook:hover {
+  color: rgb(18, 96, 190);
 }
 
 /* #contact a {
@@ -237,12 +245,12 @@ body {
   font-size: 1.25em;
 }
 
-/* End Contact CSS */
+/************* END Contact CSS /*************/
 
 
-/* Footer CSS */
+/************* BEGIN Footer CSS /*************/
 footer {
-  background-color: azure;
+  background-color: rgb(203, 236, 247);
   padding: 3em 0;
 }
 
@@ -275,8 +283,8 @@ footer .row {
   padding-bottom: 2em;
   text-align: center;
 }
-.fab {
+footer .fab {
   font-size: 1.5em;
 }
 
-/* End Footer CSS */
+/************* END Footer CSS /*************/
