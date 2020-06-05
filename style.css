@@ -226,12 +226,8 @@ body {
 .msg {
   text-align: center;
 }
-.msg p {
-  font-family: 'Montserrat', sans-serif;
-  color: ;
-  /* font-size: 2px; */
-}
 .msg .btn-block {
+  font-family: 'Montserrat', sans-serif;
   /* display: block; */
   border-radius: 5px;
   color: rgb(8, 94, 94);
