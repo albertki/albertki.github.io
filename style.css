@@ -1,6 +1,7 @@
 /* nav brand font */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Comfortaa:wght@400;500;600&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .cover-container {
   max-width: 42em;
@@ -225,10 +226,15 @@ body {
 .msg {
   text-align: center;
 }
+.msg p {
+  font-family: 'Montserrat', sans-serif;
+  color: ;
+  /* font-size: 2px; */
+}
 .msg .btn-block {
   /* display: block; */
   border-radius: 5px;
-  color: rgb(7, 104, 104);
+  color: rgb(8, 94, 94);
   background-color: rgb(7, 173, 173);
   border: 0px solid transparent;
   line-height: 1.75em;
