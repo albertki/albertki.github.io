@@ -37,10 +37,23 @@ body {
   background-color: aliceblue;
   /* width: 80%; */
 }
-
 #projects > .cover-container > h1 {
   /* color: rgb(22, 106, 190); */
   color: #379480;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#music {
+  /* background-color: rgb(250, 249, 249); */
+  background-color: rgb(86, 177, 149);
+  
+  /* width: 80%; */
+}
+#music > .cover-container > h1 {
+  /* color: rgb(22, 106, 190); */
+  font-family: 'Open Sans', sans-serif;
+
+  color: #ffffff;
 }
 
 .jumbotron {
@@ -120,9 +133,7 @@ body {
   }
 }
 .fixed-top {
-  /* left: auto;
-  right: auto; */
-  transition:background-color 200ms linear; 
+  transition: background-color 200ms linear; 
 }
 .fixed-top.scrolled {
   background-color: rgba(255, 255, 255, 0.808) !important;
@@ -140,7 +151,9 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: dodgerblue;
 }
-
+.scrollUp {
+    transform: translateY(-80px);
+}
 /* .show {
   background-color: yellow;
 } */
@@ -251,6 +264,7 @@ body {
 
 
 /************* BEGIN Footer CSS /*************/
+
 footer {
   background-color: rgb(203, 236, 247);
   padding: 3em 0;
