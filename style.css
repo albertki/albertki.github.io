@@ -44,14 +44,25 @@ body {
   /* background-color: aliceblue; */
   /* width: 80%; */
 }
+#projects .jumbotron {
+  background-color: rgba(47, 112, 252, 0.788);
+}
 #projects .cover-container h1 {
   /* color: rgb(22, 106, 190); */
-  color: dodgerblue;
+  /* color: dodgerblue; */
+  color: royalblue;
   font-family: 'Open Sans', sans-serif;
 }
 .fa-python, .fa-java {
   font-size: 1.5em;
   padding-right: 1rem;
+}
+#octocat {
+  position: relative;
+}
+#octocat:focus {
+  animation: shake 0.5s;
+  animation-iteration-count: 3s;
 }
 
 #music {
@@ -65,10 +76,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   /* color: #ffffff; */
   color: rgba(27, 119, 155, 0.747);
-}
-
-.jumbotron {
-  background-color: #6edb9bcc;
 }
 
 .featurette-divider {
