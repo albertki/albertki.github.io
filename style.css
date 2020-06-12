@@ -66,9 +66,7 @@ body {
 }
 
 #music {
-  /* background-color: rgb(250, 249, 249); */
-  background-color: aliceblue;
-  
+  /* background-color: aliceblue; */
   /* width: 80%; */
 }
 #music > .cover-container > h1 {
