@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Comfortaa:wght@400;500;600&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 .cover-container {
-  max-width: 42em;
+  max-width: 32em;
 }
 html {
   scroll-behavior: smooth;
@@ -12,8 +12,8 @@ html {
 
 html, body {
   height: 100%;
-  /* background-color: dodgerblue; */
-  background-color: rgb(148, 216, 201);
+  background-color: dodgerblue;
+  /* background-color: rgba(75, 172, 236, 0.918); */
 }
 body {
   position: relative;
@@ -25,6 +25,7 @@ body {
 }
 #intro {
   background-color: aliceblue;
+  font-family: 'Domine', serif;
   color: #0b5c81;
   padding: 1em 1em;
   border-radius: 8px;
@@ -32,32 +33,42 @@ body {
 #profile-pic > img {
   border-radius: 8px;
 }
+/* @media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 760px;
+  }
+} */
+
 #projects {
   /* background-color: rgb(250, 249, 249); */
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   /* width: 80%; */
 }
-#projects > .cover-container > h1 {
+#projects .cover-container h1 {
   /* color: rgb(22, 106, 190); */
-  color: #379480;
+  color: dodgerblue;
   font-family: 'Open Sans', sans-serif;
+}
+.fa-python, .fa-java {
+  font-size: 1.5em;
+  padding-right: 1rem;
 }
 
 #music {
   /* background-color: rgb(250, 249, 249); */
-  background-color: rgb(86, 177, 149);
+  background-color: aliceblue;
   
   /* width: 80%; */
 }
 #music > .cover-container > h1 {
   /* color: rgb(22, 106, 190); */
   font-family: 'Open Sans', sans-serif;
-
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: rgba(27, 119, 155, 0.747);
 }
 
 .jumbotron {
-  background-color: transparent;
+  background-color: #6edb9bcc;
 }
 
 .featurette-divider {
@@ -90,7 +101,7 @@ body {
 
 /************* BEGIN Header CSS /*************/
 
-.navbar {
+#navbar1 {
   margin-left: auto;
   margin-right: auto;
   /* width: fit-content; */
@@ -104,21 +115,21 @@ body {
   font-weight: 500;
   font-size: 1.5em;
 }
-.navbar .navbar-collapse {
+#navbar1 .navbar-collapse {
   text-align: center;
 }
-.navbar .nav-link {
+#navbar1 .nav-link {
   /* padding: .25rem 0; */
   border-bottom: .25rem solid transparent;
 }
-.navbar .active .nav-link {
+/* #navbar1 .active.nav-link {
   border-bottom-color: #fff;
-}
+} */
 .nav-item .nav-link {
   margin-left: .5rem;
   margin-right: .5rem;
 }
-.navbar .nav-link:hover {
+#navbar1 .nav-link:hover {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
@@ -132,21 +143,24 @@ body {
     margin-right: auto!important;
   }
 }
-.fixed-top {
+#navbar1 {
   transition: background-color 200ms linear; 
 }
-.fixed-top.scrolled {
-  background-color: rgba(255, 255, 255, 0.808) !important;
+#navbar1.scrolled {
+  background-color: rgba(255, 255, 255, 0.932) !important;
   transition: background-color 200ms linear;
 }
-.fixed-top.scrolled .active .nav-link {
-  border-bottom-color: #555;
+#navbar1.navbar-light .nav-link:hover {
+  border-bottom-color: rgba(180, 180, 180, 0.678);
 }
-.navbar.scrolled .nav-link:hover {
-  border-bottom-color: rgb(161, 161, 161);
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .6);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: transparent;
 }
 .navbar-nav .nav-link.active {
-  background-color: #a1a1a13a;
+  background-color: #a1a1a194;
 }
 .navbar-light .navbar-nav .nav-link {
   color: dodgerblue;
@@ -154,6 +168,8 @@ body {
 .scrollUp {
     transform: translateY(-80px);
 }
+
+
 /* .show {
   background-color: yellow;
 } */
@@ -179,11 +195,11 @@ body {
   background-color: #45b29a;
   color: rgb(204, 204, 204);
 }
-.fixed-top.scrolled .contact-btn {
+#navbar1.scrolled .contact-btn {
   background-color: #45b29a;
   color: white;
 }
-.fixed-top.scrolled .contact-btn:hover {
+#navbar1.scrolled .contact-btn:hover {
   background-color: #379480;
   color: rgb(204, 204, 204);
   border: 2px solid transparent;
