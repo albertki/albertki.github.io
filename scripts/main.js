@@ -14,7 +14,13 @@ $(function () {
   });
 });
 
+
 $('#octocat').click(function() {
+  if ($('#octocat').css("top") !== "0px") {
+    // console.log("isBouncing");
+    return;
+  }
+  // console.log($('#octocat').css("top"));
   bounce($('#octocat'));
 })
 function bounce(thing) {
@@ -33,22 +39,3 @@ function bounce(thing) {
     top: 0
   }, interval);
 }
-// Scroll to specific values
-// scrollTo is the same
-// window.scroll({
-//   top: 2500, 
-//   left: 0, 
-//   behavior: 'smooth'
-// });
-
-// // Scroll certain amounts from current position 
-// window.scrollBy({ 
-//   top: 100, // could be negative value
-//   left: 0, 
-//   behavior: 'smooth' 
-// });
-
-// // Scroll to a certain element
-// document.querySelector('.hello').scrollIntoView({ 
-//   behavior: 'smooth' 
-// });

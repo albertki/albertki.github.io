@@ -7,13 +7,18 @@
 html {
   scroll-behavior: smooth;
 }
-
 html, body {
   height: 100%;
   background-color: dodgerblue;
-  min-width: fit-content;
-  /* background-color: rgba(75, 172, 236, 0.918); */
+  min-width: fit-content;   /* stop shrinking w/ window size, at some point */
 }
+/* shrink font-size relative to window size, at some point */
+@media (max-width: 508px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   position: relative;
   overflow-y: auto;
@@ -35,17 +40,8 @@ body {
 #profile-pic > img {
   border-radius: 8px;
 }
-/* @media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-      max-width: 760px;
-  }
-} */
 
-#projects {
-  /* background-color: rgb(250, 249, 249); */
-  /* background-color: aliceblue; */
-  /* width: 80%; */
-}
+/* BEGIN Projects section */
 #projects .jumbotron {
   background-color: rgba(47, 112, 252, 0.788);
 }
@@ -62,21 +58,16 @@ body {
 #octocat {
   position: relative;
 }
-#octocat:focus {
-  animation: shake 0.5s;
-  animation-iteration-count: 3s;
-}
+/* END Projects section */
 
-#music {
-  /* background-color: aliceblue; */
-  /* width: 80%; */
-}
+/* BEGIN Music section */
 #music > .cover-container > h1 {
   /* color: rgb(22, 106, 190); */
   font-family: 'Open Sans', sans-serif;
   /* color: #ffffff; */
   color: rgba(27, 119, 155, 0.747);
 }
+/* END Music section */
 
 .featurette-divider {
   margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
@@ -106,11 +97,6 @@ body {
   }
 }
 
-@media (max-width: 508px) {
-  html {
-    font-size: 75%;
-  }
-}
 
 /************* BEGIN Header CSS /*************/
 
@@ -120,6 +106,7 @@ body {
   /* width: fit-content; */
   /* padding-left: 3em; */
   background-color: rgb(22, 103, 184);
+  transition: background-color 200ms linear; /* color change anim on scroll-to-top*/
 }
 .navbar-brand {
   /* font-family: 'Baloo Thambi 2', cursive; */
@@ -134,11 +121,6 @@ body {
 #navbar1 .nav-link {
   /* padding: .25rem 0; */
   border-bottom: .25rem solid transparent;
-}
-/* #navbar1 .active.nav-link {
-  border-bottom-color: #fff;
-} */
-.nav-item .nav-link {
   margin-left: .5rem;
   margin-right: .5rem;
 }
@@ -156,27 +138,26 @@ body {
     margin-right: auto!important;
   }
 }
-#navbar1 {
-  transition: background-color 200ms linear; 
-}
+/* color animation upon scroll-down */
 #navbar1.scrolled {
   background-color: rgba(255, 255, 255, 0.932) !important;
   transition: background-color 200ms linear;
 }
-#navbar1.navbar-light .nav-link:hover {
+#navbar1.navbar-light .navbar-nav .nav-link {
+  color: dodgerblue;
+}
+#navbar1.navbar-light .navbar-nav .nav-link.active {
+  /* font-weight: 500; */
+  color: rgba(8, 156, 255, 0.89);
+  border-bottom-color: dodgerblue;
+  text-shadow: 1px 2px 4px rgba(4, 121, 255, 0.466);
+}
+#navbar1.navbar-light .navbar-nav .nav-link:hover {
   border-bottom-color: rgba(180, 180, 180, 0.678);
 }
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, .6);
-}
-.navbar-dark .navbar-nav .nav-link.active {
+#navbar1.navbar-dark .navbar-nav .nav-link.active {
   background-color: transparent;
-}
-.navbar-nav .nav-link.active {
-  background-color: #a1a1a194;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: dodgerblue;
+  /* border-bottom-color: aliceblue; */
 }
 .scrollUp {
     transform: translateY(-80px);
