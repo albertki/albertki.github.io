@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
-.cover-container {
-  max-width: 32em;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,6 +11,7 @@ html {
 html, body {
   height: 100%;
   background-color: dodgerblue;
+  min-width: fit-content;
   /* background-color: rgba(75, 172, 236, 0.918); */
 }
 body {
@@ -22,6 +21,9 @@ body {
 }
 .lead {
   font-weight: 300;
+}
+.cover-container {
+  max-width: 32em;
 }
 #intro {
   background-color: aliceblue;
@@ -101,6 +103,12 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 508px) {
+  html {
+    font-size: 75%;
   }
 }
 
@@ -216,30 +224,33 @@ body {
 /************* BEGIN Contact CSS /*************/
 
 #contact #linkedin, #contact #github, #contact #facebook {
+  padding: 0 0;
+}
+#contact #linkedin>i, #contact #github>i, #contact #facebook>i {
   /* float: left; */
   font-size: 3em; 
-  margin-right: .5rem;
+  margin-right: 1rem;
 }
-#linkedin {
+#linkedin>i {
   color: #0e76a8;
 }
-#linkedin:hover {
+#linkedin>i:hover {
   color: #0b5c81;
 }
-#linkedin:active, #github:active, #facebook:active {
+#linkedin>i:active, #github>i:active, #facebook>i:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-#github {
+#github>i {
   color: rgb(73, 70, 70);
 }
-#github:hover {
+#github>i:hover {
   color: black;
 }
-#facebook {
+#facebook>i {
   color: #1778F2;
 }
-#facebook:hover {
+#facebook>i:hover {
   color: rgb(18, 96, 190);
 }
 
