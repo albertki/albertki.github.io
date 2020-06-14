@@ -1,0 +1,316 @@
+/* nav brand font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Comfortaa:wght@400;500;600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+html, body {
+	height: 100%;
+	background-color: dodgerblue;
+	min-width: fit-content;   /* stop shrinking w/ window size, at some point */
+}
+/* shrink font-size relative to window size, at some point */
+@media (max-width: 508px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+body {
+	position: relative;
+	overflow-y: auto;
+	padding-top: 65px; /* padding for fixed navbar */
+}
+.lead {
+  	font-weight: 300;
+}
+.cover-container {
+  	max-width: 32em;
+}
+#intro {
+  	background-color: aliceblue;
+	font-family: 'Domine', serif;
+	color: #0b5c81;
+	padding: 1em 1em;
+	border-radius: 8px;
+}
+#profile-pic > img {
+  	border-radius: 8px;
+}
+
+/* BEGIN Projects section */
+#projects {
+	.jumbotron {
+		background-color: rgba(47, 112, 252, 0.788);
+	}
+	.cover-container h1 {
+		color: royalblue;
+		font-family: 'Open Sans', sans-serif;
+	}
+}
+.fa-python, .fa-java {
+	font-size: 1.5em;
+	padding-right: 1rem;
+}
+#octocat {
+  	position: relative;
+}
+/* END Projects section */
+
+/* BEGIN Music section */
+#music > .cover-container > h1 {
+	/* color: rgb(22, 106, 190); */
+	font-family: 'Open Sans', sans-serif;
+	/* color: #ffffff; */
+	color: rgba(27, 119, 155, 0.747);
+}
+/* END Music section */
+
+.featurette-divider {
+	margin: 3rem 7rem; /* Space out the Bootstrap <hr> more */
+	border: 1px solid rgb(219, 219, 219);
+	/* border-radius: 2px; */
+}
+
+.featurette-heading {
+  	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+}
+
+.marketing h2 {
+  	font-weight: 400;
+}
+
+@media (min-width: 40em) {
+  	.featurette-heading {
+    	font-size: 50px;
+  	}
+}
+
+@media (min-width: 62em) {
+  	.featurette-heading {
+    	margin-top: 7rem;
+  	}
+}
+
+
+/************* BEGIN Header CSS /*************/
+
+#navbar1 {
+  	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(22, 103, 184);
+	transition: background-color 200ms linear; /* color change anim on scroll-to-top*/
+	/* width: fit-content; */
+	/* padding-left: 3em; */
+	.navbar-collapse {
+		text-align: center;
+	}
+  	.nav-link {
+		/* padding: .25rem 0; */
+		border-bottom: .25rem solid transparent;
+		margin-left: .5rem;
+		margin-right: .5rem;
+		&:hover {
+		  	border-bottom-color: rgba(255, 255, 255, .25);
+		}
+  	}
+	.navbar-brand {
+		/* font-family: 'Baloo Thambi 2', cursive; */
+		font-family: 'Comfortaa', cursive;
+		/* font-family: 'Righteous', cursive; */
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+	/* color animation upon scroll-down */
+	&.scrolled {
+		background-color: rgba(255, 255, 255, 0.932) !important;
+		transition: background-color 200ms linear;
+		.contact-btn {
+				background-color: #45b29a;
+				color: white;
+			&:hover {
+				background-color: #379480;
+				color: rgb(204, 204, 204);
+				border: 2px solid transparent;
+			}
+		}
+	}
+	&.navbar-light .navbar-nav .nav-link {
+		color: dodgerblue;
+		&.active {
+			/* font-weight: 500; */
+			color: rgba(8, 156, 255, 0.89);
+			border-bottom-color: dodgerblue;
+			text-shadow: 1px 2px 4px rgba(4, 121, 255, 0.466);
+		}
+		&:hover {
+			border-bottom-color: rgba(180, 180, 180, 0.678);
+		}
+	}
+	&.navbar-dark .navbar-nav .nav-link.active {
+		background-color: transparent;
+	  	/* border-bottom-color: aliceblue; */
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-expand-md .navbar-nav {
+		align-items: center;
+		margin-right: auto!important;
+		.nav-link {
+			width: fit-content;
+			text-align: center;
+		}
+    }
+}
+.scrollUp {
+	transform: translateY(-80px);
+}
+
+/* .show {
+  	background-color: yellow;
+} */
+.dropdown-menu {
+  	background-color: white;
+  	color: whitesmoke;
+}
+.dropdown:hover .dropdown-menu {
+  	display: block;
+}
+
+.dropdown-item {
+  	padding-left: 1em;
+  padding-right: 1em;
+}
+
+.contact-btn {
+  	background-color: aliceblue;
+  	color: #45b29a;
+  	border: 2px solid #45b29a;
+	
+	&:hover {
+		background-color: #45b29a;
+		color: rgb(204, 204, 204);
+	}
+}
+
+/************* END Header CSS /*************/
+
+
+/************* BEGIN Contact CSS /*************/
+
+#contact {
+	.btn {
+		padding: 0 0;
+	}
+	#linkedin, #github, #facebook {
+		/* float: left; */
+		font-size: 3em; 
+		margin-right: 1rem;
+		&:active {
+			box-shadow: 0 5px rgba(102, 102, 102, 0.568);
+			transform: translateY(1.5px);
+		}
+	}
+	#linkedin {
+		color: #0e76a8;
+		&:hover {
+			color: #0b5c81;
+		}
+	}
+	#github {
+		color: rgb(73, 70, 70);
+		&:hover {
+			color: black;
+		}
+	}
+	#facebook {
+		color: #1778F2;
+		&:hover {
+			color: rgb(18, 96, 190);
+		}
+	}
+}
+
+/* #contact a {
+  	display: block;
+  line-height: 15px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  font-size: 15px;
+  width: fit-content;
+} */
+/* ul.no-bullets {
+  	list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+} */
+
+.msg {
+  	text-align: center;
+	.btn-block {
+		font-family: 'Montserrat', sans-serif;
+		/* display: block; */
+		border-radius: 5px;
+		color: rgb(8, 94, 94);
+		background-color: rgb(7, 173, 173);
+		border: 0px solid transparent;
+		line-height: 1.75em;
+	}
+	a:hover {
+		color: rgb(7, 104, 104);
+		background-color: rgb(10, 150, 150);
+	}
+}
+.fa-envelope {
+  	font-size: 1.25em;
+}
+
+/************* END Contact CSS /*************/
+
+
+/************* BEGIN Footer CSS /*************/
+
+footer {
+  	background-color: rgb(203, 236, 247);
+	padding: 3em 0;
+	.footer-list {
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 600px;
+		padding: 0;
+		a {
+			display: block;
+			text-align: center;
+			text-decoration: dashed;
+			color: black;
+			/* font-size: 1.5em; */
+			font-size: 2em;
+			width: fit-content;
+			/* padding-bottom: .5em; */
+		}
+	}
+	.row {
+		width: 50%;
+		padding-bottom: 2em;
+		text-align: center;
+	 }
+	.fab {
+		font-size: 1.5em;
+  	}
+}
+
+/* @media (min-width: 992px) {
+  	footer .footer-list a {
+      	width: 25%;
+      padding: 0;
+      align-items: center;
+  }
+} */
+
+/************* END Footer CSS /*************/
