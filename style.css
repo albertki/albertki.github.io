@@ -37,7 +37,7 @@ body {
 
 #intro {
   background-color: aliceblue;
-  font-family: "Domine", serif;
+  /* font-family: "Domine", serif; */
   color: #0b5c81;
   padding: 1em 1em;
   border-radius: 8px;
