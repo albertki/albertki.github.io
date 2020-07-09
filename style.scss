@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Playfair+Display&display=swap');	// quote
 html {
 	scroll-behavior: smooth;
 }
@@ -50,6 +50,12 @@ body {
 		color: royalblue;
 		font-family: 'Open Sans', sans-serif;
 	}
+}
+.quote {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	color: rgba(22, 22, 87, 0.774);
+	// width: 10em;
 }
 .fa-python, .fa-java {
 	font-size: 1.5em;
